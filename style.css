@@ -12,7 +12,7 @@ height: 100vh;
 width: 100vw;
 }
 #ContainsSkills{
-  background-color: var(--darkerShade);
+  background-color: var(--Daak);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,8 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    background-color:var(--Background_colour);
+    background-color:var(--Daak);
+    color: var(--Background_colour);
     
 }
 #introduction{
@@ -78,7 +79,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--darkerShade);
+  background-color: var(--Daak);
 }
 .card{
   border-radius: 10px;
@@ -86,7 +87,7 @@ body{
   height: 210px;
   padding: 10px;
  margin: 10px;
-background-color: var(--lighterShade);
+background-color: rgba(255, 255, 255, 0.02);
 transition: transform 0.2s ease-in-out;
 }
 .card:hover {
@@ -104,6 +105,7 @@ transition: transform 0.2s ease-in-out;
   justify-content: center;
   align-items: center;
   margin: 5px;
+  margin-top: 20px;
 }
 .intro{
   text-align: center;
@@ -119,16 +121,18 @@ transition: transform 0.2s ease-in-out;
 .header {
     width: 100%;
     overflow: hidden;
-    background-color: var(--headerColour);
+    background-color: var(--Daak);
     padding: 5px;
     top: 0;
     position: fixed;
+    
+    border: 2px solid rgba(255, 255, 255, 0.1);
   }
   
   /* Style the header links */
   .header a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -166,36 +170,38 @@ float: right;
     height: 100vh;
     background-color: var(--Daak);
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0px;
     overflow: hidden;
     padding: 0px;
-    align-items: center;
-    justify-content: center;
+    
   }
-  #myCards{
+  #Cards{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
     max-width: 922px;
     width: calc(100% - 20px);
   }
-  .CardsB{
+  .Card3{
     background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgb(255, 255, 255, 0.1);
     border-radius: 10px;
     cursor: pointer;
     height: 260px;
     position: relative;
     width: 300px;
   }
-  .CardsB:hover::before{
+  .Card3:hover::before{
     opacity: 1;
   }
-  .CardsB::before {
-    background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y) 100px 100px,
-    rgba(255,255,255,0,06),
-    transparent 40%
+  .Card3::before {
+  background: radial-gradient(
+  800px circle at 100px 100px,
+  rgba(255, 255,255, 0.06),
+  transparent 40%
     );
     border-radius: inherit;
     content: "";
