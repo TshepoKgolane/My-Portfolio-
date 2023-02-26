@@ -29,7 +29,7 @@ font-weight: lighter;
 letter-spacing: 2px;
 transition: 2s box-shadow;
 }
-.hoverMe2
+.hoverMe2, .hoverMe3
 {
 display: flex;
 align-items: center;
@@ -70,7 +70,7 @@ transition: 2s box-shadow;
 {
 box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
 }
-.hoverMe2:hover
+.hoverMe2:hover, .hoverMe3:hover
 {
 box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
 }
@@ -96,6 +96,17 @@ border-radius: 15px;
 z-index: -1;
 animation: 1s clockwise infinite;
 }
+.hoverMe:hover::before, .hoverMe2:hover::after,.hoverMe3:hover::before, .hoverMe3:hover::after
+{
+display: block;
+content: '';
+position: absolute;
+width: 350px;
+height: 450px;
+border-radius: 15px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
 .hoverMe:hover:after
 {
 background: var(--shade);
@@ -104,6 +115,11 @@ animation: 2s counterclockwise infinite;
 .hoverMe2:hover:after
 {
 background: var(--shade);
+animation: 2s counterclockwise infinite;
+}
+.hoverMe3:hover:after
+{
+background: orangered;
 animation: 2s counterclockwise infinite;
 }
 @keyframes clockwise {
@@ -199,11 +215,12 @@ width: 100vw;
   margin: 20px;
 }
 .ToolsCard{
-  margin-left: 30px;
+  margin: 0px;
 }
 .Father{
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
 } 
 section{
@@ -247,7 +264,7 @@ html{
 body{
     background-color:var(--Daak);
     color: white;
-    overflow-x: hidden;
+   
     
 }
 #introduction{
@@ -258,11 +275,24 @@ body{
     
      text-align: center;
    } 
-.letsGetStarted{
+.letsGetStarted,.contactElements{
   display: flex;
   justify-content: center;
   align-items: center;
  
+}
+.socialIcons{
+  display: flex;
+  margin: 5px;
+}
+.linkNames a { 
+  color: white;
+  text-decoration: none;
+  
+}
+.linkNames{
+  text-align: center;
+  margin: 10px;
 }
 
 .cardsContainer{
@@ -272,10 +302,20 @@ body{
   align-items: center;
   background-color: var(--Daak);
 }
-.holder{
+.holder, .containsContact,.insideHolder{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.holder{
+  width: 100%;
+}
+
+.insideHolder{
+  height: 100%;
+  width: 450px;
+  
 }
 .card{
   border-radius: 10px;
@@ -315,8 +355,18 @@ transition: transform 0.2s ease-in-out;
   justify-content: center;
   align-items: center;
   height: 50%;
-  width: 100%;
+  width: 350px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.picture_4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 230px;
   border-radius: 15px;
+
 }
 .intro{
   text-align: center;
@@ -451,6 +501,9 @@ transparent 40%
     align-items: center;
   }
 
+.containsContact{
+height: 100vh;
+}
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -461,6 +514,68 @@ transparent 40%
   .header-right {
     float: none;
   }
-  }
+}
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 350px;
   
- 
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--Background_colour);
+  padding: 35px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.contact-form label {
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.contact-form textarea {
+  height: 50px;
+}
+button {
+  background-color:var(--shade1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #042133;
+}
+
+
+
