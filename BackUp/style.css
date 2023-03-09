@@ -1,0 +1,648 @@
+:root{
+    --Background_colour:#2e2f34;
+    --DarkerBackground:#191921;
+    --headerColour:#;
+    --shade:#68bee0;
+    --lighterShade:#8EA7E9;
+    --shade1: #042940;
+    --Daak:rgb(20,20,20);
+    --Daaker:rgb(27, 27, 27);
+    --cleanOrange:#ff7200;
+    --TWCBlue:#0071c1;
+    --MMS:#f57513;
+    
+}
+
+.hoverMe
+{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 170px;
+height: 50px;
+background: var(--Daaker);
+border-radius: 15px;
+font-family: arial;
+font-size: 20px;
+font-weight: lighter;
+letter-spacing: 2px;
+transition: 2s box-shadow;
+}
+.hoverMe2, .hoverMe3
+{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 350px;
+height: 450px;
+background: var(--Daaker);
+border-radius: 15px;
+font-family: arial;
+font-size: 20px;
+font-weight: lighter;
+letter-spacing: 2px;
+transition: 2s box-shadow;
+}
+.insideHoverMe2{
+  width: 100%;
+  height: 80%;
+  top: 0;
+}
+.CertificateCarry
+{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width:100%;
+height:100%;
+background: var(--Daaker);
+border-radius: 15px;
+font-family: arial;
+font-size: 20px;
+font-weight: lighter;
+letter-spacing: 2px;
+transition: 2s box-shadow;
+}
+img  {
+  display: block;
+  max-width: 100%;
+}
+.hoverMe:hover
+{
+box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+.hoverMe2:hover, .hoverMe3:hover
+{
+box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+.hoverMe:hover::before, .hoverMe:hover::after
+{
+display: block;
+content: '';
+position: absolute;
+width: 170px;
+height: 50px;
+border-radius: 15px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
+.hoverMe2:hover::before, .hoverMe2:hover::after
+{
+display: block;
+content: '';
+position: absolute;
+width: 350px;
+height: 450px;
+border-radius: 15px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
+.hoverMe:hover::before, .hoverMe2:hover::after,.hoverMe3:hover::before, .hoverMe3:hover::after
+{
+display: block;
+content: '';
+position: absolute;
+width: 350px;
+height: 450px;
+border-radius: 15px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
+.hoverMe:hover:after
+{
+background: var(--shade);
+animation: 2s counterclockwise infinite;
+}
+.hoverMe2:hover:after
+{
+background: var(--shade);
+animation: 2s counterclockwise infinite;
+}
+.hoverMe3:hover:after
+{
+background: orangered;
+animation: 2s counterclockwise infinite;
+}
+@keyframes clockwise {
+0% {
+top: -5px;
+left: 0;
+}
+12% {
+top: -2px;
+left: 2px;
+}
+25% {
+top: 0;
+left: 5px;
+}
+37% {
+top: 2px;
+left: 2px;
+}
+50% {
+top: 5px;
+left: 0;
+}
+62% {
+top: 2px;
+left: -2px;
+}
+75% {
+top: 0;
+left: -5px;
+}
+87% {
+top: -2px;
+left: -2px;
+}
+100% {
+top: -5px;
+left: 0;
+}
+}
+@keyframes counterclockwise {
+0% {
+top: -5px;
+right: 0;
+}
+12% {
+top: -2px;
+right: 2px;
+}
+25% {
+top: 0;
+right: 5px;
+}
+37% {
+top: 2px;
+right: 2px;
+}
+50% {
+top: 5px;
+right: 0;
+}
+62% {
+top: 2px;
+right: -2px;
+}
+75% {
+top: 0;
+right: -5px;
+}
+87% {
+top: -2px;
+right: -2px;
+}
+100% {
+top: -5px;
+right: 0;
+}
+}
+
+
+#ContainsIntro,#ContainsAbout,#ContainsCertificate,#ExplainsCertificate,#Projects1{
+height: 100vh;
+width: 100vw;
+}
+#ContainsCertificate,#ExplainsCertificate, .UsedTools,#Projects1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Projects1{
+  margin: 20px;
+}
+.ToolsCard{
+  margin: 0px;
+}
+.Father{
+  
+  width:100%;
+  
+} 
+section{
+  scroll-snap-align: start;
+}
+#ContainsSkills{
+  height: 100vh;
+  background-color: var(--Daak);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ContainsIntro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ContainsAbout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Daaker);
+}
+.SectionTitle{
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.Bio{
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  
+}
+.bio p{
+  padding: 20px;
+  margin: 15;
+}
+*{
+  margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background-color:var(--Daak);
+    color: white;
+   
+    
+}
+#introduction{
+  text-align: center;
+
+   }
+   #introduction h1{
+    
+     text-align: center;
+   } 
+.letsGetStarted,.contactElements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.socialIcons{
+  display: flex;
+  margin: 5px;
+}
+.linkNames a { 
+  color: white;
+  text-decoration: none;
+  
+}
+.linkNames{
+  text-align: center;
+  margin: 10px;
+}
+
+.cardsContainer{
+  max-height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Daak);
+}
+.holder, .containsContact,.insideHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.holder{
+  
+}
+
+.insideHolder{
+  height: 100%;
+ 
+  
+  
+}
+.card{
+  border-radius: 10px;
+  width: 160px;
+  height: 210px;
+  padding: 0 1em;
+ margin: 0 auto;
+background-color: rgba(255, 255, 255, 0.02);
+transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.iconsDisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:20% ;
+  gap: 15px;
+}
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.picture_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  margin-top: 30px;
+}
+.picture_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 350px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.picture_4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 230px;
+  border-radius: 15px;
+
+}
+.intro{
+  text-align: center;
+ padding: 10px;
+ font-size: 15px;
+}
+.intro_2{
+  text-align: center;
+ padding: 0px;
+ font-size: 15px;
+ margin-top: 20px;
+}
+.intro_3{
+  text-align: center;
+
+ padding: 0px;
+ font-size: 15px;
+height: 100px;
+margin-top: 25px;
+}
+/* Style the header with a grey background and some padding */
+.header {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--Daak);
+    padding: 5px;
+    top: 0;
+    position: fixed;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+ 
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+
+  #letsGetStarted h2{
+    text-align: center;
+  }
+  .LowerHeader-right{
+float: right;
+  }
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  .WhatImLearning, #ExplainsCertificate{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Daaker);
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 1em;
+  }
+  #hoverCards{
+    
+    background-color: var(--Daaker);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    
+  }
+  #Cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: 922px;
+    width: calc(100% - 20px);
+  }
+  .Card3{
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 210px;
+    position: relative;
+    width: 220px;
+  }
+  .Card3:hover::before{
+    opacity: 1;
+    
+  }
+.Card3::before {
+background: radial-gradient(
+800px circle at 100px 100px,
+rgba(255, 255,255, 0.06),
+transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 500ms ;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+    
+  }
+  .ProjectDescription{
+    width: 660px;
+    height: 450px;
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.containsContact{
+height: 100vh;
+}
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: none;
+    text-align: left;
+    
+  }
+  .header-right {
+    float: right;
+  }
+  .header {
+    font-size: smaller;
+  }
+}
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--Background_colour);
+  padding: 35px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.contact-form label {
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.contact-form textarea {
+  height: 50px;
+}
+button {
+  background-color:var(--shade1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #042133;
+}
+
+
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containerr {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

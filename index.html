@@ -1,283 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Tshepo Kgolane</title>
     <link rel="icon" href="images/icon.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-        </style>
+    </style>
 </head>
+
 <body>
-    
-  
-    <div class="header">
-        <a class="logo">Tshepo Kgolane</a>
-        <div class="header-right">
-          <a href="#introduction" style="color: var(--shade);">Home</a>
-          <a href="Projects.html">Projects</a>
-          <a href="contacts.html">Contact</a>
+
+    <!-- Header-->
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <h4>Tshepo Kgolane</h4>
+            </div>
+            <div class="header-right">
+                <a href="#ContainsIntro">Home</a>
+                <a href="#ContainsAbout">About</a>
+                <a href="#ContainsSkills">Skills</a>
+                <a href="Projects.html">Portfolio</a>
+                <a href="contacts.html">Contact</a>
+                <a href="#ContainsCertificate" id="sumtingCool">#Something Cool</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
         </div>
-    </div> 
+    </header>
     <div class="Father">
-    <!-- The introduction-->
+        <!-- The introduction-->
         <section id="ContainsIntro">
             <div class="IntroElements">
                 <div id="introduction">
-                <h1>Hi.<br><br>My name is Tshepo :)</h1>
-                <p>I'm a software developer<br>
-                Nice to meet you</p>
-                </p>
+                    <h1>Hi.<br><br>My name is Tshepo :)</h1>
+                    <p style="text-align: center;">I'm a software developer<br>
+                        Nice to meet you</p>
+                    </p>
+                </div>
+                <a href="contacts.html"
+                    style="color: aliceblue; text-decoration: none; justify-content: center;display: flex;margin-top: 50px;">
+
+                    <div class="ContactBtn">
+                        Download CV
+                    </div>
+                </a>
+
             </div>
-            <a href="contacts.html" 
-            style="color: aliceblue; text-decoration: none; justify-content: center;display: flex;margin-top: 50px;">
-            <div class="hoverMe" >Contact Me</div></a>
-            </div>
-            
+
 
         </section>
         <!--The end of the introduction-->
         <!--The start of the about-->
         <section id="ContainsAbout">
             <div class="Bio">
-                <div class="SectionTitle"><h2>A bit of something about me...</h2></div>
-                <p>I am a junior software developer with a passion for 
-                    creating innovative and user-friendly software solutions.<br>I am passionate about 
-                    utilizing technology to solve complex problems and improve people's lives.<br></p>
-                    <p>
+                <div class="SectionTitle">
+                    <h2>A bit of something about me...</h2>
+                </div>
+                <h5 style="margin-top: 15px; text-align: center;">
+                    I am a junior software developer with a passion for
+                    creating innovative and user-friendly software solutions.<br> I'm a graduate from Rosebank college
+                    in possession
+                    of a diploma in IT majoring in Software development in<br> the Information and communications
+                    Technology Faculty
+                    <br><br>I am passionate about
+                    utilizing technology to solve complex problems and improve people's lives.<br>
+                </h5>
+                <h5 style="margin-top: 15px; text-align: center;">
                     My goal as a software developer is to continuously learn and improve my skills,<br>
-                    and to apply my knowledge to real-world problems in a way that delivers tangible results for my clients.<br>
-                    I am a fast learner and always eager to take on new challenges, and I believe that my attention to detail,<br>
+                    and to apply my knowledge to real-world problems in a way that delivers tangible results for my
+                    clients.<br>
+                    I am a fast learner and always eager to take on new challenges, and I believe that my attention to
+                    detail,<br>
                     problem-solving skills, and ability to work well under pressure make me an asset to any team.
                     <br><br>
-    
-                    When I'm not coding, I enjoy Going to the gym. I am a firm believer in the power of technology to <br>
-                    make a positive impact on people's lives, and I am committed to using my skills to create solutions that make a difference. 
-                    <br>If you're looking for a driven and enthusiastic junior software developer,<br> I would be honored to be considered for the role.</p>
-                </div>
+
+                    When I'm not coding, I enjoy Going to the gym. I am a firm believer in the power of technology to
+                    <br>
+                    make a positive impact on people's lives, and I am committed to using my skills to create solutions
+                    that make a difference.
+                    <br>If you're looking for a driven and enthusiastic junior software developer,<br> I would be
+                    honored to be considered for the role.
+                </h5>
+            </div>
         </section>
         <!--The end of the About-->
         <!--The start of the skills-->
         <section id="ContainsSkills">
             <div class="wrapsSkillElements">
-                <div class="SectionTitle"><h2>Skills</h2></div>
-                <div style="text-align: center; margin-top: 10px;" ><h4>Here's what I'm good at.</h4></div>
-                <div style="text-align: center;margin-bottom: 20px;word-spacing: 1.2px;"><h5>Check out my <a href="Projects.html" style="color: var(--shade);text-decoration: none;"> Projects</a> page to see how i used these skills to solve problems</h5></div>
-                   <!--Web dev cards-->
+                <div class="SectionTitle">
+                    <h2>Skills</h2>
+                </div>
+                <div class="SkillsIntro" style="text-align: center; margin-top: 10px;">
+                    <h4>Here's what I'm good at.</h4>
+                </div>
+                <div class="SkillsIntro" style="text-align: center;margin-bottom: 20px;word-spacing: 1.2px;">
+                    <h5>Check out my <a href="Projects.html" style="color: var(--shade);text-decoration: none;">
+                            Projects</a> page to see how i used these skills to solve problems</h5>
+                </div>
+                <!--Web dev cards-->
                 <div class="cardsContainer">
-                        <div class="card" >
-                            <div class="picture_2"><img src="images/HTML5.png" alt="Html" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Html</h1>
-                            </div>
-                            <div class="picture"><img src="images/4star.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/HTML5.png" alt="Html" width="50%" height="50%">
                         </div>
-                        <div class="card" onclick="">
-                            <div class="picture_2"><img src="images/CSS3.png" alt="Css" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Css</h1>
-                            </div>
-                            <div class="picture"><img src="images/3Half.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+                        <div class="intro_2">
+                            <h4>Html</h1>
                         </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/php.png" alt="Php" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>PhP</h4>
-                            </div>
-                            <div class="picture"><img src="images/3Half.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+                        <div class="picture"><img src="images/4star.png" alt="4 stars" width="80px" height="55px"></div>
+
+                    </div>
+                    <div class="card" onclick="">
+                        <div class="picture_2"><img src="images/CSS3.png" alt="Css" width="50%" height="50%"></div>
+                        <div class="intro_2">
+                            <h4>Css</h1>
                         </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/mysql.png" alt="Php" width="65px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>MySQL</h4>
-                            </div>
-                            <div class="picture"><img src="images/4star.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+                        <div class="picture"><img src="images/3Half.png" alt="4 stars" width="80px" height="55px"></div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/php.png" alt="Php" width="55px" height="70px">
                         </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/android.png" alt="Php" width="65px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Android Studio</h4>
-                            </div>
-                            <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+                        <div class="intro_2">
+                            <h4>PhP</h4>
                         </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/fire.png" alt="Php" width="65px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Firebase</h4>
-                            </div>
-                            <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+                        <div class="picture"><img src="images/3Half.png" alt="4 stars" width="80px" height="55px"></div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/mysql.png" alt="Php" width="65px" height="70px">
+                        </div>
+                        <div class="intro_2">
+                            <h4>MySQL</h4>
+                        </div>
+                        <div class="picture"><img src="images/4star.png" alt="4 stars" width="80px" height="55px"></div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/android.png" alt="Php" width="65px" height="70px">
+                        </div>
+                        <div class="intro_2">
+                            <h4>Android Studio</h4>
+                        </div>
+                        <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px">
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/fire.png" alt="Php" width="50%" height="50%">
+                        </div>
+                        <div class="intro_2">
+                            <h4>Firebase</h4>
+                        </div>
+                        <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px">
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="picture_2"><img src="images/java.png" alt="Shinning diamond" width="55px"
+                                height="70px"></div>
+                        <div class="intro_2">
+                            <h4>Java</h1>
+                        </div>
+                        <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="50px">
+                        </div>
+
+                    </div>
+                    <div class="card" onclick="">
+                        <div class="picture_2"><img src="images/Csh.png" alt="Shinning diamond" width="55px"
+                                height="70px"></div>
+                        <div class="intro_2">
+                            <h4>C#</h1>
+                        </div>
+                        <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px">
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/msSql.png" alt="Shinning diamond" width="60px" height="65px">
+                        </div>
+                        <div class="intro_2">
+                            <h4>MS SQL Server</h4>
+                        </div>
+                        <div class="picture"><img src="images/4star.png" alt="4 stars" width="80px" height="55px"></div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/oracleDB.png" alt="Shinning diamond" width="40px" height="65px">
+                        </div>
+                        <div class="intro_2">
+                            <h4>Oracle DB</h4>
+                        </div>
+                        <div class="picture"><img src="images/3Half.png" alt="4 stars" width="80px" height="55px"></div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/asp.png" alt="Shinning diamond" width="40px" height="65px">
+                        </div>
+                        <div class="intro_2">
+                            <h4>Asp.net Framework</h4>
+                        </div>
+                        <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px">
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="picture_2">
+                            <img src="images/dot-net-core.png" alt="Shinning diamond" width="40px" height="65px">
+                        </div>
+                        <div class="intro_2">
+                            <h4>Asp.net Core</h4>
+                        </div>
+                        <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px">
+                        </div>
+
+                    </div>
+                </div>
+                <!--Database cards-->
+
+            </div>
+    </div>
+    </div>
+
+    </section>
+    <!-- End Of skills-->
+    <!-- skills being learnt-->
+    <section class="WhatImLearning">
+        <div class="IsLearnt">
+            <h3 style="text-align: center; margin-bottom: 20px;">What I'm currently learning on my free time</h3>
+            <div id="hoverCards">
+
+                <div id="Cards">
+                    <div class="Card3">
+                        <div class="picture_2"><img src="images/js.png" alt="Shinning diamond" width="55px"
+                                height="70px"></div>
+                        <div class="intro_2">
+                            <h4>Java script</h1>
+                                <h5>(Expected 2023)</h5>
                         </div>
                     </div>
-                    <!--Software cards-->
-                    <div class="cardsContainer">
-                        <div class="card" >
-                            <div class="picture_2"><img src="images/java.png" alt="Shinning diamond" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Java</h1>
-                            </div>
-                            <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px"></div>
-                            
-                        </div>
-                        <div class="card" onclick="">
-                            <div class="picture_2"><img src="images/Csh.png" alt="Shinning diamond" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>C#</h1>
-                            </div>
-                            <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px"></div>
-                            
-                        </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/msSql.png" alt="Shinning diamond" width="60px" height="65px"></div>
-                            <div class="intro_2">
-                                <h4>MS SQL Server</h4>
-                            </div>
-                            <div class="picture"><img src="images/4star.png" alt="4 stars" width="80px" height="55px"></div>
-                            
-                        </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/oracleDB.png" alt="Shinning diamond" width="40px" height="65px"></div>
-                            <div class="intro_2">
-                                <h4>Oracle DB</h4>
-                            </div>
-                            <div class="picture"><img src="images/3Half.png" alt="4 stars" width="80px" height="55px"></div>
-                            
-                        </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/asp.png" alt="Shinning diamond" width="40px" height="65px"></div>
-                            <div class="intro_2">
-                                <h4>Asp.net Framework</h4>
-                            </div>
-                            <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px"></div>
-                            
-                        </div>
-                        <div class="card">
-                            <div class="picture_2">
-                                <img src="images/dot-net-core.png" alt="Shinning diamond" width="40px" height="65px"></div>
-                            <div class="intro_2">
-                                <h4>Asp.net Core</h4>
-                            </div>
-                            <div class="picture"><img src="images/4Halfstar.png" alt="4 stars" width="80px" height="55px"></div>
-                            
+                    <div class="Card3">
+                        <div class="picture_2"><img src="images/python.png" alt="Shinning diamond" width="55px"
+                                height="70px"></div>
+                        <div class="intro_2">
+                            <h4>Python</h1>
+                                <h5>(Expected 2023)</h5>
                         </div>
                     </div>
-                    <!--Database cards-->
-                   
+                    <div class="Card3">
+                        <div class="picture_2"><img src="images/aws.png" alt="Shinning diamond" width="55px"
+                                height="70px"></div>
+                        <div class="intro_2">
+                            <h4>Amazon web Services</h1>
+                                <h5>(Expected 2023)</h5>
+                        </div>
+                    </div>
+                    <div class="Card3">
+                        <div class="picture_2"><img src="images/react.png" alt="Shinning diamond" width="55px"
+                                height="70px"></div>
+                        <div class="intro_2">
+                            <h4>React</h1>
+                                <h5>(Expected 2023)</h5>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Certificate starts-->
+
+    <section id="ContainsCertificate">
+        <div class="AwardsContainer">
+            <div class="SectionTitle">
+                <h2>Awards and Certificates</h2>
+            </div>
+            <div>
+                <img id="Certificate" src="images/HackathonImg.png" alt="Code" width="450px" height="550px">
+            </div>
+        </div>
+
+    </section>
+    <section id="ExplainsCertificate">
+        <div class="ContainsExplainantion">
+            <div class="SectionTitle">
+                <h2>Wondering how I got the certificate?</h2>
             </div>
 
-        </section>
-        <!-- End Of skills-->
-        <section class="WhatImLearning">
-            <div class="IsLearnt">
-                <h3 style="text-align: center; margin-bottom: 20px;">What I'm currently learning on my free time</h3>
-                <div id="hoverCards">
-        
-                    <div id="Cards">
-                        <div class="Card3"> <div class="picture_2"><img src="images/js.png" alt="Shinning diamond" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Java script</h1>
-                                <h5>(Expected 2023)</h5>
-                            </div>
-                        </div>
-                        <div class="Card3"> <div class="picture_2"><img src="images/python.png" alt="Shinning diamond" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Python</h1>
-                                    <h5>(Expected 2023)</h5>
-                            </div>
-                       </div>
-                        <div class="Card3"> <div class="picture_2"><img src="images/aws.png" alt="Shinning diamond" width="55px" height="70px"></div>
-                            <div class="intro_2">
-                                <h4>Amazon web Services</h1>
-                                    <h5>(Expected 2023)</h5>
-                            </div>
-                       </div>
+            <div class="Bio">
 
+                <h5 style="margin-top: 15px; text-align: center;">
+
+                    In 2021 by the end of the academic year, Rosebank college hosted a Hackathon that promised a<br>
+                    R10 000 voucher to a team that can create a solution that can solve any student related problem.<br>
+                    The idea was for participants to research on student related problems or to look around them and<br>
+                    notice what problems they encountered and how they can be resolved.
+                    <br><br>
+                    I created my solution which I Called 'HERO- the student companion'.Hero was supposed to be as the
+                    name suggests<br>
+                    a companion for students. I saw that students including myself needed a helping hand in structuring
+                    their time,<br>
+                    pacing their studies and keeping track of assessment schedules to increase their chances of
+                    success.<br>
+                    <br><br>
+                    They did not have a proper way to measure and track their progress with their studies, so I created
+                    some structure for students,<br>
+                    something that will provide the structure they need to excel, and that's where the development of
+                    hero came to life.<br>
+
+                    I programmed the application using ASP. Net framework for the user interface and leveraged the power
+                    of C# to write the algorithm.<br>
+                    To store the user input i utilised Microsoft SQL Server to create a database where all the input
+                    will be stored.<br><br>
+                    Feel free to check out my Github repository for the source code or view the Youtube video for the
+                    app in the Projects section.<br>
+
+                </h5>
+
+            </div>
+            <h5 style="text-align: center; margin-bottom: 20px; margin-top: 10px;">These are the tools I used to create
+                the software that won me third place!!!</h5>
+
+            <div class="UsedTools">
+                <div class="ToolsCard">
+                    <div class="picture_2">
+                        <img src="images/Csh.png" alt="Shinning diamond" width="40px" height="65px">
+                    </div>
+
+                </div>
+                <div class="ToolsCard">
+                    <div class="picture_2">
+                        <img src="images/asp.png" alt="Shinning diamond" width="40px" height="65px">
+                    </div>
+
+                </div>
+                <div styele="ToolsCard">
+                    <div class="picture_2">
+                        <img src="images/msSql.png" alt="Shinning diamond" width="40px" height="65px">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<section>
+    <footer class="footer">
+        <div class="FooterContainer">
+            <div class="FooterRow">
+                <div class="footer-col">
+                    <h4>Tshepo Kgolane</h4>
+                    <ul>
+                        <li><a href="#ContainsAbout">Who am I?</a></li>
+                        <li><a href="#ContainsSkills">What am I bringing to your company?</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="contacts.html">Get in Contact?</a></li>
+                        <li><a href="contacts.html">Have an Enquiry?</a></li>
                         
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>What have I done so far?</h4>
+                    
+                    <ul>
+                        <li><a href="https://github.com/TshepoKgolane">Check out my github repo</a></li>
+                        <li><a href="https://www.youtube.com/@tshepokgolane">Watch a video of one of my past projects</a></li>
+                        <li><a href="Projects.html">Check out my Projects</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow Me</h4>
+                    <div class="social-links">
+                       
+                        <a href="https://github.com/TshepoKgolane"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/legendary.vx?igshield=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/legendary-kgolane-9825a6257"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-            
-        
-        </section>
-       
-   
-      <!-- Certificate starts-->
-     
-      <section id="ContainsCertificate">
-        <div class="AwardsContainer">
-            <h3 style="text-align: center; margin-bottom: 20px; margin-top: 60px;">Awards and Certificates</h3>
-              <div class="CertificateCarry">
-                 <div class="picture"><img src="images/HackathonImg.png" alt="Code" width="450px" height="550px"></div>
-              </div>  
-            </div>
-                   
-      </section>
-      <section id="ExplainsCertificate">
-<div class="ContainsExplainantion">
-    <h3 style="text-align: center; margin-bottom: 20px; margin-top: 60px;">Wondering how I got the certificate?</h3>
-      
-    <div class="Bio">
-
-        <p style="font-size: 13px;text-align:center;">
-
-            In 2021 by the end of the academic year, Rosebank college hosted a Hackathon that promised a<br>
-            R10 000 voucher to a team that can create a solution that can solve any student related problem.<br>
-            The idea was for participants to research on student related problems or to look around them and<br>
-            notice what problems they encountered and how they can be resolved.
-            <br><br>
-            I created my solution which I Called 'HERO- the student companion'.Hero was supposed to be as the name suggests<br>
-            a companion for students. I saw that students including myself needed a helping hand in structuring their time,<br>
-            pacing their studies and keeping track of assessment schedules to increase their chances of success.<br>
-            <br><br>
-            They did not have a proper way to measure and track their progress with their studies, so I created some structure for students,<br>
-            something that will provide the structure they need to excel, and that's where the development of hero came to life.<br>
-            
-            I programmed the application using ASP. Net framework for the user interface and leveraged the power of C#  to write the algorithm.<br>
-            To store the user input i utilised Microsoft SQL Server to create a database where all the input will be stored.<br><br>
-            Feel free to check out my Github repository for the source code or view the Youtube video for the app in the Projects section.<br>
-            
-          </p>
-            
-           </div>
-           <h5 style="text-align: center; margin-bottom: 20px; margin-top: 10px;">These are the tools I used to create the software that won me third place!!!</h5>
-    
-           <div class="UsedTools">
-               <div class="ToolsCard">
-                   <div class="picture_2">
-                       <img src="images/Csh.png" alt="Shinning diamond" width="40px" height="65px"></div>
-                   
-               </div>
-               <div class="ToolsCard">
-                   <div class="picture_2">
-                       <img src="images/asp.png" alt="Shinning diamond" width="40px" height="65px"></div>
-                  
-               </div>
-               <div styele="ToolsCard">
-                   <div class="picture_2">
-                       <img src="images/msSql.png" alt="Shinning diamond" width="40px" height="65px"></div>
-                   
-               </div>
-           </div>    
-</div>
-      </section>
-     
-   </div>
-   
+        </div>
+   </footer>
+</section>
 </body>
+
 </html>

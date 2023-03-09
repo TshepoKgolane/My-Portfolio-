@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contacts</title>
     <link rel="icon" href="images/icon.png">
     <style>
@@ -14,16 +17,23 @@
 </head>
 
 <body>
-    <div class="header">
-        <a class="logo">Tshepo Kgolane</a>
+    <div class="topnav" id="myTopnav">
+        <div class="logo">Tshepo Kgolane</div>
         <div class="header-right">
             <a href="index.html">Home</a>
-            <a href="Projects.html">Projects</a>
-            <a href="" style="color: var(--shade);">Contact</a>
-        </div>
-    </div>
-    <div class="father">
+            <a href="Projects.html">Portfolio</a>
+            <a href="#hello">Contact</a>
 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+    </div>
+    <!--The Father ;) -->
+    <div id="hello"></div>
+    <div class="father">
+        <!--Contact card-->
         <section class="containsContact">
             <div style="width: 100%;">
                 <h2 style=" color: white; text-align: center;margin: 15px;">
@@ -35,7 +45,8 @@
                             <div class="socialIcons">
                                 <div class="">
                                     <a href="https://www.linkedin.com/in/legendary-kgolane-9825a6257">
-                                        <img src="images/Linkedin-logo.png" alt="linkedIn Logo" width="40px" height="40px">
+                                        <img src="images/Linkedin-logo.png" alt="linkedIn Logo" width="40px"
+                                            height="40px">
                                     </a>
                                 </div>
                                 <div class="linkNames">
@@ -43,7 +54,7 @@
                                         legendary-kgolane
                                     </a>
                                 </div>
-                                
+
                             </div>
                             <div class="socialIcons">
                                 <div class="">
@@ -56,7 +67,7 @@
                                         TshepoKgolane
                                     </a>
                                 </div>
-                                
+
                             </div>
                             <div class="socialIcons">
                                 <div class="">
@@ -68,37 +79,77 @@
                                     Tshepokgolane29@gmail.com
                                 </div>
                             </div>
+                            <a href="Docs/CV - Tshepo.pdf" download='Tshepo-Kgolane-CV'
+                                style="color: aliceblue; text-decoration: none; justify-content: center;display: flex;margin-top: 50px;">
 
+                                <div class="ContactBtn">
+                                    <i class="fa fa-download" aria-hidden="true"></i> Download CV
+                                </div>
+                            </a>
                         </div>
 
                     </div>
-                    <div class="contact-form-container">
-                        <h2>Send me a Message</h2>
-                        <form class="contact-form" method="POST">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
-    
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-    
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
 
                 </div>
 
-               
+
             </div>
         </section>
-        <section class="containsContact">
 
-        </section>
+       
+
 
     </div>
-
+    <section>
+        <footer class="footer">
+            <div class="FooterContainer">
+                <div class="FooterRow">
+                    <div class="footer-col">
+                        <h4>Tshepo Kgolane</h4>
+                        <ul>
+                            <li><a href="#ContainsAbout">Who am I?</a></li>
+                            <li><a href="#ContainsSkills">What am I bringing to your company?</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4></h4>
+                        <ul>
+                            <li><a href="contacts.html">Get in Contact?</a></li>
+                            <li><a href="contacts.html">Have an Enquiry?</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>What have I done so far?</h4>
+                        
+                        <ul>
+                            <li><a href="https://github.com/TshepoKgolane">Check out my github repo</a></li>
+                            <li><a href="https://www.youtube.com/@tshepokgolane">Watch a video of one of my past projects</a></li>
+                            <li><a href="Projects.html">Check out my Projects</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow Me</h4>
+                        <div class="social-links">
+                           
+                            <a href="https://github.com/TshepoKgolane"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/legendary.vx?igshield=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/legendary-kgolane-9825a6257"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </section>
 </body>
 
 </html>
