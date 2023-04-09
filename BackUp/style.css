@@ -315,6 +315,7 @@ body{
   justify-content: center;
   align-items: center;
   width: 100%;
+
   
 }
 .holder{
@@ -510,8 +511,24 @@ transparent 40%
     justify-content: center;
     align-items: center;
   }
-
+.secondFather{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/valent.jpg); 
+  /* Background image is centered vertically and horizontally at all times */ 
+  background-position: center center;
+   /* Background image doesn’t tile */ 
+   background-repeat: no-repeat; 
+   /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */ 
+   background-attachment:scroll; 
+    /* This is what makes the background image rescale based on the container’s size */ 
+   background-size: cover;
+}
 .containsContact{
+  
 height: 100vh;
 }
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */

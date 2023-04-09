@@ -8,3 +8,6 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+function unAvailable(){
+    window.alert('Access Denied,This is for a private client');
+}
